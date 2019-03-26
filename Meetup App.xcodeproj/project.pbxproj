@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B329FA170E63E62D89E2D01 /* Pods_Meetup_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B049ADC9DCD4CC64E957E615 /* Pods_Meetup_App.framework */; };
 		770E0208224A9C5300DB5A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E0207224A9C5300DB5A05 /* AppDelegate.swift */; };
 		770E020A224A9C5300DB5A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E0209224A9C5300DB5A05 /* ViewController.swift */; };
 		770E020D224A9C5300DB5A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770E020B224A9C5300DB5A05 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26FCBBF680961F370C84E0AE /* Pods-Meetup App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup App.debug.xcconfig"; path = "Target Support Files/Pods-Meetup App/Pods-Meetup App.debug.xcconfig"; sourceTree = "<group>"; };
 		770E0204224A9C5300DB5A05 /* Meetup App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meetup App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770E0207224A9C5300DB5A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		770E0209224A9C5300DB5A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		770E020E224A9C5400DB5A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		770E0211224A9C5400DB5A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		770E0213224A9C5400DB5A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B2A77F9C45C3876FD02BCD /* Pods-Meetup App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup App.release.xcconfig"; path = "Target Support Files/Pods-Meetup App/Pods-Meetup App.release.xcconfig"; sourceTree = "<group>"; };
+		B049ADC9DCD4CC64E957E615 /* Pods_Meetup_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meetup_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B329FA170E63E62D89E2D01 /* Pods_Meetup_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				770E0206224A9C5300DB5A05 /* Meetup App */,
 				770E0205224A9C5300DB5A05 /* Products */,
+				F4B2E8E96449C75A2DC144B0 /* Pods */,
+				D81908E2B4AD441394B0389A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,55 @@
 		770E0206224A9C5300DB5A05 /* Meetup App */ = {
 			isa = PBXGroup;
 			children = (
-				770E0207224A9C5300DB5A05 /* AppDelegate.swift */,
-				770E0209224A9C5300DB5A05 /* ViewController.swift */,
-				770E020B224A9C5300DB5A05 /* Main.storyboard */,
+				770E021B224A9D1100DB5A05 /* Controller */,
+				770E021A224A9D0D00DB5A05 /* View */,
+				770E0219224A9D0500DB5A05 /* Model */,
 				770E020E224A9C5400DB5A05 /* Assets.xcassets */,
-				770E0210224A9C5400DB5A05 /* LaunchScreen.storyboard */,
 				770E0213224A9C5400DB5A05 /* Info.plist */,
 			);
 			path = "Meetup App";
+			sourceTree = "<group>";
+		};
+		770E0219224A9D0500DB5A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		770E021A224A9D0D00DB5A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				770E0210224A9C5400DB5A05 /* LaunchScreen.storyboard */,
+				770E020B224A9C5300DB5A05 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		770E021B224A9D1100DB5A05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770E0209224A9C5300DB5A05 /* ViewController.swift */,
+				770E0207224A9C5300DB5A05 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D81908E2B4AD441394B0389A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B049ADC9DCD4CC64E957E615 /* Pods_Meetup_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B2E8E96449C75A2DC144B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26FCBBF680961F370C84E0AE /* Pods-Meetup App.debug.xcconfig */,
+				99B2A77F9C45C3876FD02BCD /* Pods-Meetup App.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 770E0216224A9C5400DB5A05 /* Build configuration list for PBXNativeTarget "Meetup App" */;
 			buildPhases = (
+				A866EAE6A809A4612B0D66FC /* [CP] Check Pods Manifest.lock */,
 				770E0200224A9C5300DB5A05 /* Sources */,
 				770E0201224A9C5300DB5A05 /* Frameworks */,
 				770E0202224A9C5300DB5A05 /* Resources */,
+				6BC7D8D61EEC3E31BE042282 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +179,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BC7D8D61EEC3E31BE042282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meetup App/Pods-Meetup App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meetup App/Pods-Meetup App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A866EAE6A809A4612B0D66FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meetup App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		770E0200224A9C5300DB5A05 /* Sources */ = {
@@ -280,6 +379,7 @@
 		};
 		770E0217224A9C5400DB5A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FCBBF680961F370C84E0AE /* Pods-Meetup App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +398,7 @@
 		};
 		770E0218224A9C5400DB5A05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B2A77F9C45C3876FD02BCD /* Pods-Meetup App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
